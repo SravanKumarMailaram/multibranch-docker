@@ -15,7 +15,7 @@ pipeline {
         stage('Push') {
             steps {
                 script {
-                    withDockerRegistry(credentialsId: 'dockerhubcredentials') {
+                    withDockerRegistry(credentialsId: 'dockerhub credentials') {
                         sh 'docker push sravankumarmailaram/paytm:bank'
                     }
                 }
